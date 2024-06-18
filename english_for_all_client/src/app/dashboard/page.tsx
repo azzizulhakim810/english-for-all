@@ -1,6 +1,6 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
 
-export const DashboardPage = async () => {
+const DashboardPage = async () => {
   const { userId } = auth();
   const user = await currentUser();
   // console.log(userId, user);
