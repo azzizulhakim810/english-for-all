@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.5",
     "@clerk/nextjs": "^5.1.5",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
+    "framer-motion": "^11.2.10",
+    "graphql": "^16.8.2",
+    "jotai": "^2.8.3",
     "mongodb": "^6.7.0",
     "mongoose": "^8.4.1",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "svix": "^1.24.0"
+    "react-icons": "^5.2.1",
+    "sharp": "^0.33.4",
+    "svix": "^1.24.0",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "^20",

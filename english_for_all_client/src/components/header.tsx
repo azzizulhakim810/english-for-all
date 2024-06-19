@@ -1,9 +1,9 @@
-import { UserButton } from "@clerk/nextjs";
+import { UserButton, useAuth } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 
 const Header = () => {
-  const { userId } = auth();
+  // const { userId, isLoaded } = useAuth();
 
   return (
     <div className="bg-black text-neutral-100">
@@ -13,7 +13,7 @@ const Header = () => {
           <Link href="/about">About</Link>
         </div>
         <div>
-          {userId ? (
+          {/*  {userId ? (
             <div className="flex gap-4 items-center">
               <Link href="/dashboard">Dashboard</Link>
               <UserButton afterSignOutUrl="/" />
@@ -23,7 +23,7 @@ const Header = () => {
               <Link href="/sign-up">Sign up</Link>
               <Link href="/sign-in">Sign In</Link>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
