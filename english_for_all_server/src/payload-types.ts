@@ -11,7 +11,7 @@ export interface Config {
     users: User;
     media: Media;
     pages: Page;
-    'book-collection': BookCollection;
+    books: Book;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
@@ -70,9 +70,9 @@ export interface Page {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "book-collection".
+ * via the `definition` "books".
  */
-export interface BookCollection {
+export interface Book {
   id: string;
   bookName: string;
   description: string;

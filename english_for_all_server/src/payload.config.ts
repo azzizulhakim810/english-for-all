@@ -9,7 +9,7 @@ import sharp from 'sharp'
 import { fileURLToPath } from 'url'
 
 import { buildConfig } from 'payload'
-import { BookCollection } from './collections/Books'
+import { Books } from './collections/Books'
 import { Media } from './collections/Media'
 import { Users } from './collections/Users'
 import { Pages } from './collections/pages'
@@ -22,7 +22,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [Users, Media, Pages, BookCollection],
+  collections: [Users, Media, Pages, Books],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

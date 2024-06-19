@@ -1,6 +1,6 @@
 import { ImageBasedQuestion } from '@/blocks/image_based_questions'
 import { MultipleChoiceQuestion } from '@/blocks/multiple_choice_questions'
-import { CollectionConfig } from 'payload/types'
+import { CollectionConfig } from 'payload'
 
 /* const QuoteBlock: Block = {
   slug: 'Quote', // required
@@ -21,8 +21,8 @@ import { CollectionConfig } from 'payload/types'
   ],
 } */
 
-export const BookCollection: CollectionConfig = {
-  slug: 'book-collection',
+export const Books: CollectionConfig = {
+  slug: 'books',
   fields: [
     {
       name: 'bookName',
