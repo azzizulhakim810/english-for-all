@@ -1,11 +1,7 @@
-import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
-// import fetch from "isomorphic-unfetch";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  link: new HttpLink({
-    uri: "/api/graphql", // Use the proxy API route
-    fetch,
-  }),
+  uri: "http://localhost:5000/api/graphql", // Your GraphQL endpoint
   cache: new InMemoryCache(),
 });
 

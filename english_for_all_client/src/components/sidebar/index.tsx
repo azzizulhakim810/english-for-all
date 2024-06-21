@@ -86,6 +86,26 @@ const SiteBar = () => {
                   </Link>
                 </li>
                 <li onClick={() => setExpand(false)}>
+                  <Link href="/books">
+                    <div
+                      className={`${
+                        location === "/books"
+                          ? "bg-gray-100 text-primary"
+                          : "text-white bg-transparent"
+                      }  w-full py-3  font-medium flex items-center px-6 lg:px-10   gap-5`}
+                    >
+                      <IcoVideo />
+
+                      <Typography
+                        variant="Medium_H7"
+                        className="text-base md:!text-lg"
+                      >
+                        Books
+                      </Typography>
+                    </div>
+                  </Link>
+                </li>
+                <li onClick={() => setExpand(false)}>
                   <Link href="/setting">
                     <div
                       className={`${

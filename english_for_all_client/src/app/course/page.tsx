@@ -1,7 +1,5 @@
-import Navbar from "@/components/Navbar";
 import CourseLeft from "@/components/courseLeft";
 import CourseRight from "@/components/courseRight";
-import React from "react";
 
 const Course = () => {
   return (

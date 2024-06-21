@@ -1,10 +1,10 @@
 import RecentCourse from "@/components/RecentCourse";
 import MyClass from "@/components/myClass";
-import { Typography } from "@/components/ui/Typography";
-import { IoSearch } from "react-icons/io5";
-import { gql, useQuery } from "@apollo/client";
+// import { Typography } from "@/components/ui/Typography";
+// import { IoSearch } from "react-icons/io5";
+// import { gql, useQuery } from "@apollo/client";
 
-const GET_Books = gql`
+/* const GET_Books = gql`
   query {
     getBooks {
       id
@@ -13,7 +13,7 @@ const GET_Books = gql`
     }
   }
 `;
-
+ */
 export default function Home() {
   // const { loading, error, data } = useQuery(GET_Books);
   // if (loading) return <p>Loading...</p>;
@@ -27,12 +27,12 @@ export default function Home() {
       <RecentCourse />
 
       <div>
-        {/* {data.exampleCollection.map((item) => (
+         {/* {data.exampleCollection.map((item) => (
           <div key={item.id}>
             <h3>{item.title}</h3>
             <p>{item.content}</p>
           </div>
-        ))} */}
+        ))}  */}
       </div>
     </main>
   );
